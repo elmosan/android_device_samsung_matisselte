@@ -16,9 +16,6 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from matisselte device
-$(call inherit-product, device/samsung/matisselte/device.mk)
-
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := matisselte
 PRODUCT_NAME := full_matisselte
@@ -27,4 +24,4 @@ PRODUCT_MODEL := SM-T535
 PRODUCT_MANUFACTURER := samsung
 
 $(call inherit-product, device/samsung/matisselte/device.mk)
-$(call inherit-product-if-exists, vendor/samsung/matisse3g/matisselte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/matisselte/matisselte-vendor.mk)
